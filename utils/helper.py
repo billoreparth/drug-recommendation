@@ -1,8 +1,6 @@
 import pickle
 import pandas as pd
 import numpy as np 
-from gensim.models import word2vec 
-from gensim.models import keyedvectors
 
 def load_model(path:str):
     with open(path,'rb') as file: 
@@ -41,10 +39,6 @@ def words_to_vectors(text:str,model:any):
             return np.mean(vectors,axis=0)
         else : 
             return np.zeros(model.vector_size)
-        
-def load_word2vec():
-    path = "src\Data\GoogleNews-vectors-negative300.bin"
-    return keyedvectors.load_word2vec_format(path,binary=True)
 
 def recommend_drug(drug:str,sim_model:any):
     df=load_training_data()
