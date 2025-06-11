@@ -1,9 +1,6 @@
 numpy
 pandas 
 scikit-learn 
-nltk
-matplotlib
-gensim
 pydantic==1.8
 streamlit
 tensorflow==2.16
