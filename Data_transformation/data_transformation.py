@@ -9,8 +9,9 @@ import re
 import sys
 import logging
 import pickle
+import nltk
 
-
+nltk.download('stopwords')
 
 model_data=load_model_data()
 drugs_name=[]
