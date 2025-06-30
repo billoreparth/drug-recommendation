@@ -1,5 +1,7 @@
 import streamlit as st
+import os 
 
+os.makedirs('logs', exist_ok=True)
 # Define the pages
 Recomendation_by_drug = st.Page("src/Resources/Recomendation_by_drug.py", title="Recommendation_by_Drug", icon="🎈")
 Recomendation_by_condition = st.Page("src/Resources/Recomendation_by_condition.py", title="Recommendation_by_Symptoms", icon="❄️")
