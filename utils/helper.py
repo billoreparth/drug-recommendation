@@ -7,10 +7,10 @@ def load_model(path:str):
         return pickle.load(file)
     
 def load_training_data():
-    return pd.read_csv('src\Data\cleaned_training_data.csv')
+    return pd.read_csv('src/Data/cleaned_training_data.csv')
 
 def load_output_data():
-    return pd.read_csv('src\Data\data.csv')
+    return pd.read_csv('src/Data/data.csv')
 
 def save_model(name:str,content):
     '''
@@ -21,7 +21,7 @@ def save_model(name:str,content):
         pickle.dump(content,file)
 
 def load_model_data():
-    return pd.read_csv('src\Data\model_data.csv')
+    return pd.read_csv('src/Data/model_data.csv')
 
 def words_to_vectors(text:str,model:any):
     '''
